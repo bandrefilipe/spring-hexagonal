@@ -29,6 +29,8 @@
     <module>commons</module>
     <module>domain</module>
     <module>application</module>
+    <module>adapters</module>
+    <module>adapters-bundle</module>
     <module>bootloader</module>
   </modules>
 

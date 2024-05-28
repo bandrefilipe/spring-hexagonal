@@ -4,33 +4,23 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <artifactId>bootloader</artifactId>
+  <artifactId>example</artifactId>
 
   <parent>
     <groupId>com.example</groupId>
-    <artifactId>spring-hexagonal</artifactId>
+    <artifactId>adapters</artifactId>
     <version>1.0.0-SNAPSHOT</version>
   </parent>
 
   <dependencies>
-    <!-- Project Modules -->
-    <dependency>
-      <groupId>${project.groupId}</groupId>
-      <artifactId>adapters-bundle</artifactId>
-      <version>${project.version}</version>
-    </dependency>
-
     <!-- Spring Boot Dependencies -->
     <dependency>
       <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-starter-actuator</artifactId>
+      <artifactId>spring-boot-starter-web</artifactId>
     </dependency>
-
-    <!-- Test Dependencies -->
     <dependency>
-      <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-starter-test</artifactId>
-      <scope>test</scope>
+      <groupId>com.fasterxml.jackson.module</groupId>
+      <artifactId>jackson-module-kotlin</artifactId>
     </dependency>
   </dependencies>
 
@@ -40,15 +30,8 @@
         <groupId>org.jetbrains.kotlin</groupId>
         <artifactId>kotlin-maven-plugin</artifactId>
       </plugin>
-      <plugin>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-maven-plugin</artifactId>
-      </plugin>
-      <plugin>
-        <groupId>org.graalvm.buildtools</groupId>
-        <artifactId>native-maven-plugin</artifactId>
-      </plugin>
     </plugins>
   </build>
+
 
 </project>
