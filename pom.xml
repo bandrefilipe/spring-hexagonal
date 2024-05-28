@@ -22,6 +22,7 @@
     <maven.compiler.target>${java.version}</maven.compiler.target>
     <kotlin.version>1.9.24</kotlin.version>
     <spring-boot.version>3.3.0</spring-boot.version>
+    <kotlin-logging.version>6.0.9</kotlin-logging.version>
   </properties>
 
   <modules>
@@ -56,7 +57,7 @@
     <dependency>
       <groupId>io.github.oshai</groupId>
       <artifactId>kotlin-logging-jvm</artifactId>
-      <version>6.0.9</version>
+      <version>${kotlin-logging.version}</version>
     </dependency>
 
 
