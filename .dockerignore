@@ -1,0 +1,24 @@
+.env
+.mvn/
+mvnw
+mvnw.cmd
+README.md
+
+# Ignore Maven build directories
+target/
+
+# Ignore temporary files
+*.tmp
+
+# Ignore IDE-specific files and directories
+.idea/
+.vscode/
+*.iml
+
+# Ignore Docker-related files
+.dockerignore
+Dockerfile
+
+# Ignore version control files
+.git/
+.gitignore
