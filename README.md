@@ -1,6 +1,6 @@
 # spring-hexagonal
 
-`sprint-hexagonal` is a Spring Boot native application template built with Kotlin and Maven. It follows a clean/hexagonal architecture, facilitating the creation of new projects with modern technologies and native image support.
+`sprint-hexagonal` is a Spring Boot native application template designed to accelerate the development of Java/Kotlin projects following a clean/hexagonal architecture. With built-in support for modern technologies like Kotlin, Spring Boot, and GraalVM, this template streamlines the setup process and empowers developers to focus on building high-quality applications.
 
 ## Modules
 
@@ -18,17 +18,6 @@
 - **Spring Boot**: For application configuration and management.
 - **Maven**: As the build and dependency management tool.
 
-## Dependency Structure
-
-```mermaid
-graph TD;
-    commons --> domain;
-    domain --> application;
-    application --> adapters;
-    adapters --> example;
-    example --> adapters-bundle;
-    adapters-bundle --> bootloader;
-```
 ## Native Image Support
 
 The project includes support for native image generation using GraalVM.
@@ -45,13 +34,26 @@ To use this template:
 
 2. **Build the project**:
     ```bash
-    mvn clean install
+    ./mvnw clean install
     ```
 
 3. **Run the application**:
     ```bash
-    mvn spring-boot:run -pl bootloader
+    ./mvnw spring-boot:run -pl bootloader
     ```
+
+4. **Compile to Native Image** (Optional):
+
+   If you want to compile the application to a native image using GraalVM, follow these additional steps:
+
+    - Install GraalVM and set it up properly.
+    - Run the following command to compile the application:
+      ```bash
+      ./mvnw -Pnative package
+      ```
+    - The native image will be available in `bootloader/target/`
+      
+      Note: Compiling to a native image requires additional setup and may not be necessary for all use cases. Consult the GraalVM documentation for more details.
 
 ## Next Steps
 
