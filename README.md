@@ -28,7 +28,7 @@ To use this template:
 
 1. **Clone the repository**:
     ```bash
-    git clone https://github.com/your-username/spring-hexagonal.git
+    git clone https://github.com/bandrefilipe/spring-hexagonal.git
     cd spring-hexagonal
     ```
 
