@@ -1,6 +1,6 @@
 # spring-hexagonal
 
-`sprint-hexagonal` is a Spring Boot native application template designed to accelerate the development of Java/Kotlin projects following a clean/hexagonal architecture. With built-in support for modern technologies like Kotlin, Spring Boot, and GraalVM, this template streamlines the setup process and empowers developers to focus on building high-quality applications.
+`spring-hexagonal` is a Spring Boot native application template designed to accelerate the development of Java/Kotlin projects following a clean/hexagonal architecture. With built-in support for modern technologies like Kotlin, Spring Boot, and GraalVM, this template streamlines the setup process and empowers developers to focus on building high-quality applications.
 
 ## Modules
 
